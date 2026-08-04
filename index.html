@@ -30,10 +30,8 @@
   <body class="bg-black text-white">
     <!-- Navbar -->
 
-    <header class="navbar fixed top-0 w-full z-50">
-      <nav
-        class="relative container mx-auto flex items-center justify-between px-5 py-3"
-      >
+    <header class="navbar fixed top-0 w-full z-50 border-b-4 border-sky-400">
+      <nav class="relative w-full flex items-center justify-between px-3 py-3">
         <!-- Left Logo -->
 
         <div>
@@ -57,16 +55,16 @@
         <div class="flex items-center gap-6">
           <a
             href="#gallery"
-            class="hidden text-xl md:block text-sky-600 font-semibold"
+            class="hidden text-xl md:block text-sky-600 font-semibold italic"
           >
             Gallery
           </a>
 
           <a
-            href="#buy"
-            class="hidden text-xl md:block text-sky-600 font-semibold"
+            href="#shop"
+            class="hidden text-xl md:block text-sky-600 font-semibold italic"
           >
-            Buy
+            Shop
           </a>
 
           <button id="menuBtn" class="text-sky-600 text-3xl">
@@ -96,16 +94,52 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Banner -->
     <section
-      id="home"
-      class="min-h-screen flex items-center justify-center text-center px-5 pt-24 bg-cover bg-center bg-no-repeat relative"
+      class="relative min-h-screen pt-24 bg-cover bg-top bg-no-repeat flex items-center bg-[length:100%_100%]"
       style="
         background-image:
-          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
           url(&quot;./image/bg-2.png&quot;);
       "
-    ></section>
+    >
+      <div class="max-w-7xl mx-auto px-5 w-full">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <!-- Left Text -->
+          <div class="text-white text-center lg:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Champion Racing
+              <span class="text-sky-400"> Pigeons </span>
+            </h1>
+            <p
+              class="mt-6 text-lg md:text-xl text-gray-200 max-w-xl mx-auto lg:mx-0"
+            >
+              Welcome to Mustakim's Pigeon Loft. A premium racing pigeon loft
+              dedicated to champion bloodlines, performance and breeding
+              excellence.
+            </p>
+            <div
+              class="mt-8 flex gap-4 justify-center lg:justify-start flex-wrap"
+            >
+              <a
+                href="#pigeons"
+                class="bg-sky-500 hover:bg-sky-600 px-7 py-3 rounded-full font-semibold transition"
+              >
+                Explore Pigeons
+              </a>
+              <a
+                href="#contact"
+                class="border-2 border-white hover:bg-white hover:text-black px-7 py-3 rounded-full font-semibold transition"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <!-- Right Banner Image -->
+          <div class="relative flex justify-center"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- Articles Section -->
 
@@ -115,7 +149,6 @@
         <h2 class="text-4xl font-bold text-center text-sky-600 mb-12 italic">
           Latest Articles
         </h2>
-
         <!-- Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Card 1: Racing Pigeon -->
@@ -123,8 +156,6 @@
             class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col justify-between border-2 border-sky-600"
           >
             <div>
-              <!-- Image Container with Overlapping Badge -->
-              <!-- src="https://images.unsplash.com/photo-1549608276-5786777e6587?q=80&w=600&auto=format&fit=crop" -->
               <div class="relative">
                 <img
                   src="./image/Racing Pigeon-1.jpeg"
@@ -172,8 +203,6 @@
             class="bg-sky-200 rounded-2xl shadow-md overflow-hidden flex flex-col justify-between border-2 border-sky-600"
           >
             <div>
-              <!-- Image Container with Overlapping Badge -->
-              <!-- src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?q=80&w=600&auto=format&fit=crop" -->
               <div class="relative">
                 <img
                   src="./image/High Flyer Pigeon-1.jpg"
@@ -223,8 +252,6 @@
             class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col justify-between border-2 border-sky-600"
           >
             <div>
-              <!-- Image Container with Overlapping Badge -->
-              <!-- src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?q=80&w=600&auto=format&fit=crop" -->
               <div class="relative">
                 <img
                   src="./image/Fancy Pigeon-1.png"
@@ -349,10 +376,11 @@
           </div>
 
           <div class="pigeon-card">
-            <img      src="https://i.pinimg.com/736x/1f/ee/13/1fee13c7656be85d40d9e0e870932a5f.jpg"/>
+            <img
+              src="https://i.pinimg.com/736x/1f/ee/13/1fee13c7656be85d40d9e0e870932a5f.jpg"
+            />
 
             <h3>Bolt</h3>
-
             <p>
               <b>Bloodline:</b>Heremans-Ceusters Line (Descended from the
               world-famous Olympiade 003 strain)
@@ -367,19 +395,133 @@
       </div>
     </section>
 
-    <!-- Pedigree Section -->
-    <!-- 
-    <section class="py-20 bg-sky-500">
-      <div class="container mx-auto px-5 text-center">
-        <h2 class="text-4xl font-bold">Bloodline & Pedigree</h2>
+    <!-- Shop Section -->
 
-        <p class="mt-5 text-lg">
-          Strong Genetics From European Racing Lines.
-          <br />
-          Selected For Speed, Endurance And Navigation.
-        </p>
+    <section id="shop" class="py-20 bg-sky-100">
+      <div class="max-w-7xl mx-auto px-5">
+        <!-- Section Title -->
+
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-800">
+            Champion Racing
+            <span class="text-sky-500"> Pigeons Shop </span>
+          </h1>
+
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto font-semibold">
+            Explore premium racing pigeons from champion bloodlines. Quality
+            birds with excellent performance and pedigree.
+          </p>
+        </div>
+
+        <!-- Shop Grid -->
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-sky-100 hover:border-sky-500 transition"
+          >
+            <img
+              src="./image/sale-1.png"
+              alt="Racing Pigeon"
+              class="w-full h-60 object-contain bg-gray-100"
+            />
+
+            <div class="p-5 bg-sky-200">
+              <h3 class="text-xl font-bold text-gray-800">Blue Bar Champion</h3>
+
+              <p class="text-sm text-gray-500 mt-2">Bloodline: Janssen</p>
+
+              <p class="text-sky-600 font-bold mt-3">$2,500</p>
+
+              <button
+                class="mt-5 w-full bg-sky-500 hover:bg-sky-600 text-white py-2 rounded-lg font-semibold transition"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-sky-100 hover:border-sky-500 transition"
+          >
+            <img
+              src="./image/sale-2.png"
+              alt="Racing Pigeon"
+              class="w-full h-60 object-contain bg-gray-100"
+            />
+
+            <div class="p-5 bg-sky-200">
+              <h3 class="text-xl font-bold text-gray-800">Belgian Racer</h3>
+
+              <p class="text-sm text-gray-500 mt-2">Bloodline: Van Dyck</p>
+
+              <p class="text-sky-600 font-bold mt-3">$3,000</p>
+
+              <button
+                class="mt-5 w-full bg-sky-500 hover:bg-sky-600 text-white py-2 rounded-lg font-semibold"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-sky-100 hover:border-sky-500 transition"
+          >
+            <img
+              src="./image/sale-3.png"
+              alt="Racing Pigeon"
+              class="w-full h-60 object-contain bg-gray-100"
+            />
+
+            <div class="p-5 bg-sky-200">
+              <h3 class="text-xl font-bold text-gray-800">High Flyer</h3>
+
+              <p class="text-sm text-gray-500 mt-2">Bloodline: Koopman</p>
+
+              <p class="text-sky-600 font-bold mt-3">$1,800</p>
+
+              <button
+                class="mt-5 w-full bg-sky-500 hover:bg-sky-600 text-white py-2 rounded-lg font-semibold"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-sky-100 hover:border-sky-500 transition"
+          >
+            <img
+              src="./image/sale-4.png"
+              alt="Racing Pigeon"
+              class="w-full h-60 object-contain bg-gray-100"
+            />
+
+            <div class="p-5 bg-sky-200">
+              <h3 class="text-xl font-bold text-gray-800">Elite Racer</h3>
+
+              <p class="text-sm text-gray-500 mt-2">Bloodline: Heremans</p>
+
+              <p class="text-sky-600 font-bold mt-3">$4,000</p>
+
+              <button
+                class="mt-5 w-full bg-sky-500 hover:bg-sky-600 text-white py-2 rounded-lg font-semibold"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Gallery -->
 
@@ -395,20 +537,6 @@
           <img class="gallery" src="images/loft.jpg" />
         </div>
       </div>
-    </section>
-
-    <!-- Contact -->
-
-    <section id="contact" class="py-20 bg-black text-center">
-      <h2 class="text-4xl font-bold">Contact Mustakim's Loft</h2>
-
-      <p class="mt-5">
-        📧 Email: your@email.com
-
-        <br />
-
-        📱 Phone: +8801XXXXXXXXX
-      </p>
     </section>
 
     <!-- Pigeons Section -->
