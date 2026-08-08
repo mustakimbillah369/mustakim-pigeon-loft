@@ -155,12 +155,10 @@ body {
   background-position: center center;
 }
 
-
-
 /* Navbar */
 
 .navbar {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 /* Logo */
@@ -173,7 +171,7 @@ body {
 
   object-fit: cover;
 
-  border: 4px solid #00BFFF;
+  border: 4px solid #00bfff;
 }
 
 /* Center Loft Name */
@@ -234,20 +232,14 @@ body {
   }
 }
 
-
-.mobile-menu{
-
-background:#020617;
-padding:20px;
-
+.mobile-menu {
+  background: #020617;
+  padding: 20px;
 }
 
-
-.mobile-menu a{
-
-display:block;
-color:white;
-padding:12px 0;
-border-bottom:1px solid #334155;
-
+.mobile-menu a {
+  display: block;
+  color: white;
+  padding: 12px 0;
+  border-bottom: 1px solid #334155;
 }
